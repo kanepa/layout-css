@@ -1,1 +1,96 @@
-walk4.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>positioning</title>
+<style>
+
+	#cont {
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 100px
+		;
+		height: 600px;
+		width: 1000px;
+		background-color: #AA2639;
+		padding: 10px;
+		border-radius: 10px;
+		
+		
+
+			}
+	.box1{
+		position: absolute; /* this brings the box to top of the screen */
+		top: 0px;
+		left: 0px;
+		display: inline-block;
+		border-radius: 15px;
+		width: 220px;
+		height: 150px;
+		background-color: #81BBC9;
+		margin: 10px;
+		font-size: 40px;
+		text-align: center;
+
+	}
+
+	.box2{
+		display: inline-block; /* this brings the box to top of the "cont" box */
+		position: relative;
+		top: 0px;
+		left: 0px;
+		border-radius: 15px;
+		width: 220px;
+		height: 150px;
+		background-color: #81BBC9;
+		margin: 10px;
+		font-size: 40px;
+		text-align: center;
+		
+	}
+	
+	.box3{
+		display: block-inline;
+		position: absolute;
+		top: 630px; 
+		left: 0px;
+		border-radius: 15px;
+		width: 220px;
+		height: 150px;
+		background-color: #81BBC9;
+		margin: 10px;
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	.box4{
+
+		display: block;
+		position: absolute;
+		top: 600px;
+		right: 80px;
+		border-radius: 15px;
+		width: 220px;
+		height: 150px;
+		background-color: #81BBC9;
+		margin: 10px;
+		font-size: 40px;
+		text-align: center;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<div id="cont"> 
+		
+		<div class="box1"> <p>1</p></div>
+			
+		<div class="box2"> <p>2</p></div>
+		<div class="box3"> <p>3</p></div>
+		<div class="box4"> <p>4</p></div>
+		</div>
+	
+</body>
+</html>
