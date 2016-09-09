@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<style>
+		/* blue: #1368ea */
+		/* green: #00934e */
+		/* yellow: #ffb802 */
+		/* goldenrod */
+		/* http://www.w3schools.com/colors/colors_names.asp */
+
+		body {
+			font-size: 20px;
+			font-family: Arial;
+		}
+		h1 {
+			text-align:center;
+			margin:20px 0;
+		}
+
+		.container {
+			width: 800px;
+			border: 5px solid goldenrod;
+			margin:10px auto;
+		}
+		.container > * {
+			background: #1368ea;
+			height: 100px;
+			margin: 10px 0;
+			border-radius: 10px;
+		}
+
+		.container > * > p {
+			text-align: center;
+			padding-top: 10px;
+			color: white;
+		}
+
+		section {
+			float:left;
+		}
+
+		aside {
+			float:right;
+		}
+
+		.container section {
+			width: 69.5%;
+			margin-right:.5%;
+		}
+
+		.container aside {
+			width: 29.5%;
+			margin-left:.5%;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+
+		.container footer {
+			margin-top:50px;
+		}
+
+		nav {
+			background: #00934e;
+		}
+
+		nav ul li {
+			display: inline-block;
+			background: darkred ;
+			padding: 5px;
+			border-radius: 5px;
+			color: white;
+			margin:10px;
+		}
+
+		#login {
+			position:absolute;
+			right:50px;
+		}
+
+		.ad {
+			border: 2px solid black;
+			background: #ffb802;
+			display: inline-block;
+			padding:10px;
+			position: fixed;
+			bottom:10px;
+			left:10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li id="login">Login/Logout</li>
+		</ul>
+	</nav>
+	<!-- this project is gonna be awesome -->
+	<h1>My Super Cool Project 😎</h1>
+
+	<div class="container">
+		<header>
+			<p>Header</p>
+		</header>
+		<section>
+			<p>Section</p>
+		</section>
+		<aside>
+			<p>Aside</p>
+		</aside>
+		<br class="clearfix" />
+		<footer>
+			<p>Footer</p>
+		</footer>
+	</div>
+
+	<div class="ad">
+		<p>Visit my page!!</p>
+	</div>
+
+</body>
+</html>
